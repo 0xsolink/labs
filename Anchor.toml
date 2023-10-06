@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+LSSVMPair = "HpSRXbwyB1wtiZGhWg1ce6yDXjgyZ523cQ5PyXMEm7zw"
+LSSVMRouter = "B7PeT5iTQUmFpoufP2gkzACWi4SRZTCjgJYF4sP9H1qf"
+XyzCurve = "ETxjHW9By3eWEet7wWgkNTja4WRWeWptzyFKL42H3TkN"
+e_zswap_ammv2_rs = "ETqSNs9N3bm1uTQuXCPGK7GU2qwVPNkFWmtWS1qunkUo"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/hujianmin/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
