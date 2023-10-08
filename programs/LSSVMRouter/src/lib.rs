@@ -9,6 +9,34 @@ pub mod lssvm_router {
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         Ok(())
     }
+    //swap NFT Token ETH
+
+
+    pub fn swapNFTsForAnyNFTsThroughETH(){
+
+    }
+
+   
+    pub fn swapNFTsForAnyNFTsThroughERC20(){
+
+    }
+
+    pub fn swapERC20ForAnyNFTs(){
+
+    }
+
+    pub fn swapETHForAnyNFTs(){
+
+    }
+
+    
+
+
+
+
+
+
+
 }
 
 #[derive(Accounts)]
