@@ -10,9 +10,6 @@ pub mod lssvm_pair_factor {
         Ok(())
     }
 
-    pub fn initialize_1(ctx: Context<Initialize>) -> Result<()> {
-        Ok(())
-    }
    
 }
 
