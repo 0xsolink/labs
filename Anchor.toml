@@ -3,6 +3,8 @@ seeds = false
 skip-lint = false
 [programs.localnet]
 LSSVMPair = "HpSRXbwyB1wtiZGhWg1ce6yDXjgyZ523cQ5PyXMEm7zw"
+LSSVMPairFactor = "7Ra2VuCxJcZpaizvHp9DYboVStmeaUMq9VWEPvjKs1g"
+LSSVMPairToken = "DKeS6NudkdzwiMtbxhw2uBJqR63TszL2ftWSdRst6uGq"
 LSSVMRouter = "B7PeT5iTQUmFpoufP2gkzACWi4SRZTCjgJYF4sP9H1qf"
 XyzCurve = "ETxjHW9By3eWEet7wWgkNTja4WRWeWptzyFKL42H3TkN"
 e_zswap_ammv2_rs = "ETqSNs9N3bm1uTQuXCPGK7GU2qwVPNkFWmtWS1qunkUo"

@@ -11,6 +11,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "LSSVMPairFactor"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+]
+
+[[package]]
 name = "LSSVMRouter"
 version = "0.1.0"
 dependencies = [

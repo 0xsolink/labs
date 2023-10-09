@@ -9,6 +9,44 @@ pub mod lssvm_pair {
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         Ok(())
     }
+
+    pub fn swapTokenForAnyNFTs(){
+
+    }
+    pub fn swapNFTsForToken(){
+
+    }
+
+    pub fn getBuyNFTQuote(){
+
+    }
+
+    pub fn getSellNFTQuote(){
+
+    }
+
+    pub fn bondingCurve(){
+
+    }
+    pub fn _sendAnyNFTsToRecipient(){
+
+    }
+    pub fn _takeNFTsFromSender(){
+
+    }
+    pub fn _pullTokenInputAndPayProtocolFee(){
+
+    }
+    
+    pub fn _withdrawToken(){
+
+    }
+    pub fn _sendTokenOutput(){
+
+    }
+
+
+
 }
 
 #[derive(Accounts)]
