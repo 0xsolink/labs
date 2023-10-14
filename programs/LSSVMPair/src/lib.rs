@@ -1,4 +1,19 @@
 use anchor_lang::prelude::*;
+#![allow(clippy::too_many_arguments)]
+
+use crate::curve::{base::SwapCurve, fees::Fees};
+use crate::error::SwapError;
+use solana_program::{
+    instruction::{AccountMeta, Instruction},
+    program_error::ProgramError,
+    program_pack::Pack,
+    pubkey::Pubkey,
+};
+use std::convert::TryInto;
+use std::mem::size_of;
+
+#[cfg(feature = "fuzz")]
+use arbitrary::Arbitrary;
 
 declare_id!("HpSRXbwyB1wtiZGhWg1ce6yDXjgyZ523cQ5PyXMEm7zw");
 
