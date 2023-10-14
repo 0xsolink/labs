@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
-#![allow(clippy::too_many_arguments)]
 
+mod curve;
 use crate::curve::{base::SwapCurve, fees::Fees};
 use crate::error::SwapError;
 use solana_program::{
@@ -14,7 +14,7 @@ use std::mem::size_of;
 
 #[cfg(feature = "fuzz")]
 use arbitrary::Arbitrary;
-
+/* 
 declare_id!("HpSRXbwyB1wtiZGhWg1ce6yDXjgyZ523cQ5PyXMEm7zw");
 
 #[program]
@@ -55,9 +55,9 @@ pub mod lssvm_pair {
 
 
 
-}
+}*/
 
-#[account]
+
 pub struct Initialize {
     /// all swap fees
     pub fees: Fees,
@@ -67,7 +67,7 @@ pub struct Initialize {
 }
 
 
-#[account]
+
 pub struct Swap {
     /// SOURCE amount to transfer, output to DESTINATION is based on the exchange rate
     pub amount_in: u64,
@@ -76,7 +76,6 @@ pub struct Swap {
 }
 
 
-#[derive(Accounts)]
 pub enum SwapInstruction{
     Initialize(Initialize),
     Swap(Swap)
